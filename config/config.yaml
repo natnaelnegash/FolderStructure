@@ -1,0 +1,37 @@
+db:
+  url: postgresql://postgres:1989@localhost:5432/fasttaxi?sslmode=disable
+app:
+  host: localhost
+  port: 8787
+  timeout: 1m
+debug: false
+session:
+  expiry: 20m
+  ttL: 25m
+otp:
+  length: 6
+  expiry: 3m
+  max_attempt: 3
+redis:
+  url: redis://127.0.0.1:6379
+activationcode:
+  length: 6
+
+pin:
+  max_attempt: 3
+  length: 4
+
+mongo:
+  url: mongodb://localhost:27017
+  database: loan
+  pool_size: 50
+  timeout: 10s
+
+workerpool:
+  max_workers: 50
+  task_buffer: 1000
+
+ttl:
+  minutes: 15m
+
+
